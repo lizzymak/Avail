@@ -1,0 +1,142 @@
+/* Color Palette */
+:root {
+    --williamGreen: #537E72;
+    --lightGreen: #CDDECB;
+    --darkJungleGreen: #122B1D;
+    --cream: #CBD3D8;
+}
+
+/* Font */
+@font-face {
+    font-family: myFont;
+    src: url('lemonMilk.otf');
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: myFont;
+    background-color: var(--lightGreen);
+    color: var(--darkJungleGreen);
+    display: flex;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: var(--williamGreen);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 15px 0;
+    cursor: pointer;
+    transition: 0.3;
+    color: #ffffff;
+}
+
+.sidebar li:hover,
+.sidebar .active{
+    color: var(--darkJungleGreen);
+}
+
+/* Main Content */
+.main {
+    flex-grow: 1;
+    padding: 40px;
+    max-width: 900px; 
+    margin-left: 10%; 
+    background-color: var(--lightGreen);
+    border-radius: 12px;
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+/* Weekdays Header */
+.weekdays {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 100px); 
+    gap: 10px;
+    margin-bottom: 10px;
+    transform: translate(12.5%);
+}
+
+.weekdays h1 {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 100px);
+    gap: 10px;
+}
+
+/* Time Labels */
+.hour-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--darkJungleGreen);
+}
+
+/* Checkbox Styling */
+.grid input[type="checkbox"],
+.groupBox {
+    width: 100px;
+    height: 50px;
+    background-color: var(--cream);
+    border: 3px solid var(--darkJungleGreen);
+    border-radius: 5px;
+    cursor: pointer;
+    appearance: none;
+}
+
+.grid input[type="checkbox"]:hover {
+    border-color: #ffffff;
+}
+
+.grid input[type="checkbox"]:checked {
+    background-color: var(--williamGreen);
+}
+
+/* Button Styling */
+button {
+    background-color: #9CC97F;
+    color: var(--darkJungleGreen);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: myFont;
+    transform: translate(400px, 50px);
+}
+
+button:hover {
+    background-color: #90B7BF;
+}

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: myFont;
+    src: url(lemonMilk.otf);
+}
+
+:root{
+    --williamGreen:#537E72;
+    --lightGreen:#CDDECB;
+    --darkJungleGreen:#122B1D;
+    --grassGreen: #9CC97F;
+    --cream:rgb(203, 211, 216)
+}
+
+body{
+    background: linear-gradient( to right, var(--lightGreen) 50%, var(--williamGreen) 50%);
+    
+}
+
+h1,
+html{
+    font-family: myFont;
+}
+
+a{
+    color:var(--grassGreen)
+}
+
+a:hover{
+    color:#90B7BF;
+}
+
+button {
+    background-color: var(--grassGreen);
+    color:  #122B1D;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: myFont;
+}
+
+button:hover {
+    background-color: #90B7BF;
+}
+
+.signInInput{
+    /* float: right;  */
+    width:200px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #122B1D;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    font-family: myFont;
+}
+
+.splitScreen{
+    display:flex;
+    width:100%;
+    /* height:100%; */
+    height: 90vh;
+
+}
+
+.leftSide,
+.rightSide{
+    flex:50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    flex-direction: column;
+}

@@ -1,0 +1,67 @@
+:root{
+    --green:#73ae7d;
+    --lightGreen:#9cd4a5;
+    --darkGreen:#508659;
+    --cream:rgb(203, 211, 216)
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(lemonMilk.otf);
+}
+
+body {
+    font-family: myFont;
+    background: #CDDECB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #537E72;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 80px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #122B1D;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    font-family: myFont;
+}
+
+button {
+    background-color: #9CC97F;
+    color:  #122B1D;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: myFont;
+}
+
+button:hover {
+    background-color: #90B7BF;
+}
+
+label{
+  color:  #122B1D;
+}
